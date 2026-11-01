@@ -1,0 +1,117 @@
+#include <IRremote.hpp>
+
+#define IR_RECEIVE_PIN 9
+
+// Direction Pins
+const int IN1 = 4;  // Motor A
+const int IN2 = 7;
+const int IN3 = 8;  // Motor B
+const int IN4 = 12;
+
+// Speed / Enable Pins (PWM)
+const int ENA = 5;  
+const int ENB = 6;
+
+// --- BUTTON HEX CODES ---
+// Replace these HEX values with the ones printed in your Serial Monitor for your remote!
+#define HEX_UP    0x11  // Forward
+#define HEX_DOWN  0x19  // Backward
+#define HEX_LEFT  0x14  // Turn Left
+#define HEX_RIGHT 0x16  // Turn Right
+#define HEX_STOP  0x0  // Stop
+
+void setup() {
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+  pinMode(ENA, OUTPUT);
+  pinMode(ENB, OUTPUT);
+
+  // Set motor speed to max (255)
+  analogWrite(ENA, 255);
+  analogWrite(ENB, 255);
+
+  Serial.begin(9600);
+  IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK);
+  Serial.println(F("IR Remote Motor Control Ready."));
+}
+
+void stopMotors() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+}
+
+void moveForward() {
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+}
+
+void moveBackward() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+}
+
+void turnLeft() {
+  digitalWrite(IN1, LOW);   // Motor A Reverse / Stop
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, HIGH);  // Motor B Forward
+  digitalWrite(IN4, LOW);
+}
+
+void turnRight() {
+  digitalWrite(IN1, HIGH);  // Motor A Forward
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);   // Motor B Reverse / Stop
+  digitalWrite(IN4, HIGH);
+}
+
+void loop() {
+  if (IrReceiver.decode()) {
+    // Ignore repeat codes (0x0) sent when holding down a button
+    if (!(IrReceiver.decodedIRData.flags & IRDATA_FLAGS_IS_REPEAT)) {
+      uint16_t command = IrReceiver.decodedIRData.command;
+
+      Serial.print(F("Received Command: 0x"));
+      Serial.println(command, HEX);
+
+      switch (command) {
+        case HEX_UP:
+          moveForward();
+          Serial.println(F("Action: Forward"));
+          break;
+
+        case HEX_DOWN:
+          moveBackward();
+          Serial.println(F("Action: Backward"));
+          break;
+
+        case HEX_LEFT:
+          turnLeft();
+          Serial.println(F("Action: Turn Left"));
+          break;
+
+        case HEX_RIGHT:
+          turnRight();
+          Serial.println(F("Action: Turn Right"));
+          break;
+
+        case HEX_STOP:
+          stopMotors();
+          Serial.println(F("Action: Stop"));
+          break;
+
+        default:
+          Serial.println(F("Unassigned button pressed"));
+          break;
+      }
+    }
+    IrReceiver.resume(); // Receive the next signal
+  }
+}
