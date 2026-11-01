@@ -28,4 +28,10 @@ Im only going through problems with the mechanical side, which is good i guess, 
 the onshape link:
 https://cad.onshape.com/documents/f42b43e04c4ad61b668f94ef/w/0c0e8b55c16ce46e2c956fe2/e/7b67a350074c013e1080d5fa?renderMode=0&uiState=6aca5459fa34469a809cf6e1
 
+PCB:
+<img width="461" height="332" alt="Screenshot 2026-11-01 163646" src="https://github.com/user-attachments/assets/e8184693-d68f-4256-9818-1e4c8807ef73" />
+
+<img width="539" height="380" alt="Screenshot 2026-11-01 163707" src="https://github.com/user-attachments/assets/b0457d3c-7122-4ed7-8ad5-2b9b53ab0b7e" />
+
+
 Getting the pcb is optional, but i will add it to the bom.csv file with the perf board and breadboard
