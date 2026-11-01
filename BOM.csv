@@ -1,15 +1,15 @@
-Component,Price (EUR)
-3D print(pcb way),80.00
-Geared motors(aliexpress),8.00
-ESP CAM(aliexpress),15.00
-Arduino(aliexpress),10.00
-Breadboards(aliexpress),5.00
-Motor driver(aliexpress),2.00
-IR receiver and transmitter(aliexpress),2.00
-Carbon fibre thread(aliexpress),10.00
-Epoxy kit(aliexpress),7.00
-Foam for shock absorption(aliexpress),7.00
-9V battery(aliexpress/your local shop),14.00
-Total,160.00
-
-
+Component,Price (EUR),Source / Link
+3D print,80.00,PCBWay
+Geared motors,8.00,https://es.aliexpress.com/item/1005007805394977.html
+ESP CAM,15.00,https://es.aliexpress.com/item/1005006162034604.html
+Arduino,10.00,https://es.aliexpress.com/item/1005008755502272.html
+Perfboard,5.00,https://es.aliexpress.com/item/1005012158303665.html
+Breadboards,5.00,https://es.aliexpress.com/item/1005007102424503.html
+Motor driver,2.00,https://es.aliexpress.com/item/32392774289.html
+IR receiver and transmitter,2.00,https://es.aliexpress.com/item/1005009312621318.html
+Carbon fibre sheet,10.00,https://es.aliexpress.com/item/1005006536900277.html
+Epoxy kit,7.00,https://es.aliexpress.com/item/1005004933510606.html
+Foam for shock absorption,7.00,https://es.aliexpress.com/item/1005009616228961.html
+9V battery,14.00,https://es.aliexpress.com/item/1005013447064937.html
+Caster wheel,,https://es.aliexpress.com/item/1005004896251880.html
+Total,160.00,
