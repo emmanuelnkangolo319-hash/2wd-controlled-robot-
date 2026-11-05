@@ -39,6 +39,9 @@ v2:
 <img width="369" height="314" alt="Screenshot 2026-11-01 090458" src="https://github.com/user-attachments/assets/518941e6-2b30-4d3d-9d0b-24d2d08c64cd" />
 
 
+If you want to install the .step file please download the 2wd robot assembly.zip file in the 3d model folder. 
+
+
 the onshape link:
 https://cad.onshape.com/documents/f42b43e04c4ad61b668f94ef/w/0c0e8b55c16ce46e2c956fe2/e/7b67a350074c013e1080d5fa?renderMode=0&uiState=6aca5459fa34469a809cf6e1
 (if you are unable to click on the link, just copy and paste it into your web browser)
