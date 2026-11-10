@@ -16,7 +16,7 @@ The electronics:
 <img width="539" height="380" alt="Screenshot 2026-11-01 163707" src="https://github.com/user-attachments/assets/b0457d3c-7122-4ed7-8ad5-2b9b53ab0b7e" />
 
 
-Getting the pcb is optional, but i will add it to the bom.csv file with the perf board and breadboard
+Getting the pcb is optional, but i will add it to the bom.csv file with the perf board
 
 
 The part that im scared will fail, is the ir sensors. I found out that the range of these things is about 10 meters which is good, but while simulating this in Tinkercad, it was slow, im hoping that its just software problems on Tinkercads side.
