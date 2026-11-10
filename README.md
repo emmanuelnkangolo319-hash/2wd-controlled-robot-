@@ -47,7 +47,7 @@ https://cad.onshape.com/documents/f42b43e04c4ad61b668f94ef/w/0c0e8b55c16ce46e2c9
 (if you are unable to click on the link, just copy and paste it into your web browser)
 
 Build plan:
-this section will cover how to build this, i will show a video soon.
+this section will cover how to build this, i will show a video soon(please go to 3d model/Assembly 1 for more info).
 1. Sand the wheels down, both the insides and outsides
 2. Brush on one thin layer of epoxy resin on the outside of the wheels
 3. Place your carbon fiber sheets on the outside of the wheels where you applied the epoxy
