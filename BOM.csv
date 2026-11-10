@@ -1,10 +1,8 @@
 Component,Price (EUR),Source / Link
-3D print,80.00,PCBWay
+3D print,80.00,printinglegion
 Geared motors,8.00,https://es.aliexpress.com/item/1005007805394977.html
-ESP CAM,15.00,https://es.aliexpress.com/item/1005006162034604.html
 Arduino,10.00,https://es.aliexpress.com/item/1005008755502272.html
 Perfboard,5.00,https://es.aliexpress.com/item/1005012158303665.html
-Breadboards,5.00,https://es.aliexpress.com/item/1005007102424503.html
 Motor driver(L293D),2.00,https://es.aliexpress.com/item/1005010400118009.html?spm=a2g0o.cart.0.0.21947a9dNH0hkT&mp=1&pdp_npi=6%40dis%21EUR%21EUR+2.14%21EUR+1.99%21%21EUR+1.99%21%21%21%400b884a9917941558280046994e0fbc%2112000052283568710%21ct%21ES%218192543490%21%211%210%21&gatewayAdapt=glo2esp
 PCB, 30.00, https://jlcpcb.com/es?from=esga_brand&gad_source=1&gad_campaignid=22797133438&gbraid=0AAAABAjtujJg7N4wrW6fol7QHDhyslI-D&gclid=CjwKCAjwo5bXBhAEEiwAkgpgXDlimy9fxjoK1Al5nSleVv0n1K72Gyqt7hYq9l8VQLgMdrslbIsmHxoCQWAQAvD_BwE
 IR receiver and transmitter,2.00,https://es.aliexpress.com/item/1005009312621318.html
@@ -13,4 +11,4 @@ Epoxy kit,7.00,https://es.aliexpress.com/item/1005004933510606.html
 Foam for shock absorption,7.00,https://es.aliexpress.com/item/1005009616228961.html
 9V battery,14.00,https://es.aliexpress.com/item/1005013447064937.html
 Caster wheel,5.00,https://es.aliexpress.com/item/1005004896251880.html
-Total,205.00,
+Total,185.00,
